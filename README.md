@@ -4,4 +4,4 @@ yarn install
 
 # 运行
 
-npm run serve
+npm start

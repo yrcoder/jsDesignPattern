@@ -25,6 +25,11 @@ const devConfig = {
 		clientLogLevel: 'none',
 		// 让NotifierPlugin起作用
 		quiet: true,
+		proxy: {
+			'/api/*': {
+				target: 'http://192.168.201.220:8080',
+			},
+		},
 	},
 	module: {
 		rules: [
