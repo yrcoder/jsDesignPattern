@@ -10,7 +10,8 @@
   "scripts": {
     "start": "npm-run-all serve data",
     "serve": "webpack-dev-server --config ./webpack/webpack.dev.js",
-    "data": "http-server ./server"
+    "data": "npx http-server ./server",
+    "build": "webpack --config ./webpack/webpack.dev.js"
   },
   "author": "李月茹",
   "license": "ISC",
@@ -58,6 +59,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.4.4",
+    "javascript-state-machine": "^3.1.0",
     "jquery": "^3.4.1"
   }
 }
